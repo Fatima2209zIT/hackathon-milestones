@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Static Resume Builder by Fatima Zeeshan!</h1>
+    </header>
+    
+    <main>
+        <form id="resumeForm" class="resume-form">
+            <!-- Profile Picture Section -->
+            <section id="picture" class="profile-section">
+                <img src="me.png" alt="Profile Picture" class="profile-pic">
+            </section>
+
+            <!-- Resume Content -->
+            <div class="static-resume">
+                <h2>Fatima Zeeshan's Resume Template</h2>
+                <p><strong>Name:</strong> Fatima</p>
+                <p><strong>Username:</strong> Mehmil Zeeshan</p>
+                <p><strong>Email:</strong> mehmilzeeshan125@gmail.com</p>
+                <p><strong>Number:</strong> 03323882360</p>
+
+                <h3>Education</h3>
+                <p>O Levels, SKH Solutions, Cambridge System, GIAIC Student</p>
+
+                <h3>Experience</h3>
+                <p>Working in AL-MUFLIHUN SCHOOL as a IT Teacher,Consultant and Management</p>
+
+                <h3>Skills</h3>
+                <p>TypeScript, HTML, CSS, Next.js, React.js, Tailwind CSS, Python, Graphic Designing</p>
+            </div>
+        </form>
+
+        <!-- Button Section -->
+        <div class="button">
+            <a href="resume.html">
+                <button id="createresume">Generate Your Resume</button>
+            </a>
+        </div>
+    </main>
+
+    <script src="resume.js"></script>
+</body>
+</html>

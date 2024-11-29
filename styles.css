@@ -1,0 +1,385 @@
+/* General Styling */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fc;
+    color: #003366;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fc;
+    color: #003366;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #003366;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Resume Container */
+.resume-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0073e6;
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+}
+
+
+
+/* Generated Resume */
+#generatedResume {
+    width: 100%; /* Ensure it scales well on all devices */
+    max-width: 800px; /* Limit max width for readability */
+    margin: 0 auto;
+    padding: 10px;
+    background: white; /* Set a white background for PDF */
+    color: black;
+}
+
+#generatedResume {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#generatedResume h2 {
+    font-size: 2rem;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+/* Resume Content */
+.static-resume {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid #c3dfe8;
+    text-align: left;
+}
+
+.static-resume h2 {
+    color: #003366;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.static-resume h3 {
+    margin-top: 20px;
+    color: #00509e;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+.static-resume p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #004080;
+}
+
+/* Button */
+.button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button a button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button a button:hover {
+    background-color: #00509e;
+    transform: scale(1.05);
+}
+
+.button a button:active {
+    box-shadow: none;
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .static-resume {
+        padding: 15px;
+    }
+
+    .static-resume h2 {
+        font-size: 1.2rem;
+    }
+
+    .static-resume p,
+    .static-resume h3 {
+        font-size: 0.9rem;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.resume-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0073e6;
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Generated Resume Styling */
+#generatedResume {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 16px;
+    color: #003366;
+    line-height: 1.8;
+}
+
+/* Centering the Generated Resume */
+#generatedResume {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Resume Headings */
+#generatedResume h2 {
+    font-size: 2rem;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+#generatedResume h3 {
+    font-size: 1.5rem;
+    background-color: #003366;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Resume Content */
+#generatedResume p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #004080;
+    text-align: justify;
+}
+
+/* Resume Sections */
+#generatedResume .section {
+    width: 100%;
+    text-align: left;
+    border-left: 5px solid #003366;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* Button for PDF Download */
+#generatedResume .download-btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+/* Profile Picture Styling for Generated Resume */
+#generatedResume img {
+    width: 150px; /* Match the static resume size */
+    height: 150px; /* Match the static resume size */
+    border-radius: 90%; /* Keep circular style */
+    border: 5px solid #003366; /* Match the static resume border */
+    margin-bottom: 20px;
+    object-fit: cover; /* Ensure proper image fit */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Match static resume shadow */
+}
+
+
+#generatedResume .download-btn:hover {
+    background-color: #00509e;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #generatedResume {
+        margin: 20px 10px;
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+
+    #generatedResume h2 {
+        font-size: 1.5rem;
+    }
+
+    #generatedResume h3 {
+        font-size: 1.2rem;
+    }
+
+    #generatedResume img {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 768px) {
+    #generatedResume img {
+        width: 150px; /* Slightly smaller for mobile */
+        height: 150px; /* Maintain proportions */
+    }
+}

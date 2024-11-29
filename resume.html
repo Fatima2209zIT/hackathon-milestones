@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Interactive Resume Builder by Fatima Zeeshan!</h1>
+    </header>
+
+    <main>
+        <div class="resume-container">
+            <form id="resumeForm" class="resume-form">
+                <!-- Profile Picture Upload -->
+                <div class="profile-section">
+                    <label for="profilePic">Upload Profile Picture:</label>
+                    <input type="file" id="profilePic" accept="image/*">
+                </div>
+
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information 
+                        <button type="button" class="toggle-button" data-target="personalInfo">Show/Hide</button>
+                    </legend>
+                    <div id="personalInfo">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required><br>
+                        <label for="number">Number:</label>
+                        <input type="tel" id="number" name="number" required><br>
+                    </div>
+                </fieldset>
+
+                <!-- Education -->
+                <fieldset>
+                    <legend>Education 
+                        <button type="button" class="toggle-button" data-target="educationSection">Show/Hide</button>
+                    </legend>
+                    <div id="educationSection">
+                        <label for="education">Education:</label>
+                        <textarea id="education" name="education" rows="4" required></textarea><br>
+                    </div>
+                </fieldset>
+
+                <!-- Experience -->
+                <fieldset>
+                    <legend>Experience 
+                        <button type="button" class="toggle-button" data-target="experienceSection">Show/Hide</button>
+                    </legend>
+                    <div id="experienceSection">
+                        <label for="experience">Experience:</label>
+                        <textarea id="experience" name="experience" rows="5" required></textarea><br>
+                    </div>
+                </fieldset>
+
+                <!-- Skills -->
+                <fieldset>
+                    <legend>Skills 
+                        <button type="button" class="toggle-button" data-target="skillsContainer">Show/Hide</button>
+                    </legend>
+                    <div id="skillsContainer">
+                        <label for="skills">Skills:</label>
+                        <textarea id="skills" name="skills" rows="4" required></textarea><br>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Button Section -->
+        <button type="submit" class="btn" id="generateResume">Generate Resume</button>
+        <p id="centre">Scroll down for your generated resume...</p>
+
+        <!-- Editable Generated Resume -->
+        <div id="generatedResume" class="resume-output" contenteditable="true">
+            <h2>Your Generated Resume Will Appear Here</h2>
+        </div>
+
+        <div class="button">
+            <button id="downloadResume">Download Resume as PDF</button>
+        </div>
+    </main>
+
+  
+    <script src="resume.js"></script>
+</body>
+</html>
